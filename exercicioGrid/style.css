@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 4fr 3fr 3fr;
+    grid-template-rows: 100px 1fr 80px 100px 1fr 50px;
+    gap: 10px;
+    width: 100vw;
+    height: 100vh;
+    background-color: #c0adad;
+    grid-template-areas: 
+        "TOPO       TOPO      TOPO"
+        "LAT_TOPO   MAIN      MAIN"
+        "LAT_MIDLE  MAIN      MAIN"
+        "LAT_MIDLE MAIN_MIDLE MAIN_MIDLE"
+        "LAT_BAIXO LAT_BAIXO MAIN_BAIXO"
+        "RODAPE     RODAPE  RODAPE";
+}
+
+.container div:nth-child(8){
+    grid-area: RODAPE;
+    background-color: rgb(240, 133, 12);
+}
+.container div:nth-child(7){
+    grid-area: MAIN_BAIXO;
+    background-color: rgb(219, 14, 230);
+}
+.container div:nth-child(6){
+    grid-area: LAT_BAIXO;
+    background-color: rgb(35, 93, 1);
+}
+.container div:nth-child(5){
+    grid-area: MAIN_MIDLE;
+    background-color: rgb(123, 120, 120);
+}
+.container div:nth-child(4){
+    grid-area: LAT_MIDLE;
+    background-color: rgb(78, 128, 14);
+}
+.container div:nth-child(3){
+    grid-area: MAIN;
+    background-color: rgb(182, 146, 15);
+    background: radial-gradient(circle at top left, #db0404, #b3daeb);
+}
+.container div:nth-child(3):hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+.container div:nth-child(2){
+    grid-area: LAT_TOPO;
+    background-color: rgb(181, 116, 205);
+}
+.container div:nth-child(1){
+    grid-area: TOPO;
+    /* background-color: rgb(109, 190, 228); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #022857 20% , #d1e6f0 90% );
+}
+.logo{
+    margin-left: 25px;
+    width: 80px;
+    height: 120px;
+    border-radius: 50%;
+    /* background-color: #fff; */
+    border: solid 1px white;
+    text-align: center;
+    box-shadow: 10px 8px 8px rgba(0, 0, 0, 0.25);
+    position: relative;
+    top: 30px;
+
+}

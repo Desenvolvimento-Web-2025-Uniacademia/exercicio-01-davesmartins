@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 150px 3fr 1fr;
+    grid-template-rows: 100px 1fr 50px;
+    background-color: #f73d3d; 
+    width: 100vw;
+    height: 100vh;
+    gap: 0px;  
+    grid-template-areas: 
+    'logo logo .'    
+    '. main main'    
+    'rod rod rod';  
+}
+.container div:nth-child(1){
+    grid-area: logo;
+    background-color: #3df7f2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container div:nth-child(1) > img{
+    order: -1;
+}
+
+.container div:nth-child(2){
+    grid-area: main;
+    background-color: #a0d62b;
+}
+.container div:nth-child(3){
+    grid-area: rod;
+    background-color: #e31eea;
+}

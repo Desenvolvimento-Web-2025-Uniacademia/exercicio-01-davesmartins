@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 150px 3fr 1fr;
+    grid-template-rows: 100px 1fr 50px;
+    background-color: #f73d3d; 
+    width: 100vw;
+    height: 100vh;
+    gap: 2px;    
+}
+.container div:nth-child(1){
+    background-color: #5c72e0;
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+.container div:nth-child(3){
+    background-color: #e5f235;
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+.main{
+    background-color: #3df09e;
+    grid-column: 2/3;
+    grid-row: 2/4;
+}
