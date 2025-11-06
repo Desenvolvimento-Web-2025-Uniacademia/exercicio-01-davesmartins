@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Jogo da Velha</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <section class="panel">
+      <div class="title">
+        <h1>Jogo da Velha</h1>
+        <div class="turn">
+          <div class="badge" id="badgeX"><span>X</span></div>
+          <div class="badge" id="badgeO"><span>O</span></div>
+        </div>
+      </div>
+
+      <div class="score">
+        <div class="chip">Vitórias X <strong id="sx">0</strong></div>
+        <div class="chip">Vitórias O <strong id="so">0</strong></div>
+        <div class="chip">Empates <strong id="sd">0</strong></div>
+      </div>
+
+      <div class="status play" id="status">Vez de: X</div>
+
+      <div class="actions">
+        <button class="primary" id="btnReset">Reiniciar</button>
+        <button class="danger" id="btnClear">Zerar Placar</button>
+      </div>
+      <div class="hint">Clique em uma casa para jogar</div>
+    </section>
+
+    <section class="board" id="board" aria-label="Tabuleiro 3x3">
+      <button class="cell" data-index="0" aria-label="casa 1">X</button>
+      <button class="cell" data-index="1" aria-label="casa 2">X</button>
+      <button class="cell" data-index="2" aria-label="casa 3">X</button>
+      <button class="cell" data-index="3" aria-label="casa 4"></button>
+      <button class="cell" data-index="4" aria-label="casa 5"></button>
+      <button class="cell" data-index="5" aria-label="casa 6"></button>
+      <button class="cell" data-index="6" aria-label="casa 7"></button>
+      <button class="cell" data-index="7" aria-label="casa 8"></button>
+      <button class="cell" data-index="8" aria-label="casa 9"></button>
+    </section>
+  </div>
+
+</body>
+</html>
